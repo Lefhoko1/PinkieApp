@@ -1,27 +1,44 @@
-
 import { ArrowRight, BarChart3, BookOpen, Award, Users, Sparkles, Zap, Target, TrendingUp } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import content from '../content.json';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
-
 export function HomePage({ onNavigate }: HomePageProps) {
   const features = [
-    { icon: Target, title: content.homepage.features.feature1Title, description: content.homepage.features.feature1Desc, gradient: 'from-blue-500 to-cyan-500' },
-    { icon: Zap, title: content.homepage.features.feature2Title, description: content.homepage.features.feature2Desc, gradient: 'from-purple-500 to-pink-500' },
-    { icon: Award, title: content.homepage.features.feature3Title, description: content.homepage.features.feature3Desc, gradient: 'from-amber-500 to-orange-500' },
-    { icon: Users, title: content.homepage.features.feature4Title, description: content.homepage.features.feature4Desc, gradient: 'from-green-500 to-emerald-500' },
+    {
+      icon: Target,
+      title: 'Industry-Leading Curriculum',
+      description: 'Learn from real-world data analytics scenarios and case studies used by Fortune 500 companies.',
+      gradient: 'from-blue-500 to-cyan-500',
+    },
+    {
+      icon: Zap,
+      title: 'Self-Paced Learning',
+      description: 'Study at your own pace with our comprehensive library of courses, tutorials, and resources.',
+      gradient: 'from-purple-500 to-pink-500',
+    },
+    {
+      icon: Award,
+      title: 'Certification Programs',
+      description: 'Earn recognized certificates upon course completion to boost your career prospects.',
+      gradient: 'from-amber-500 to-orange-500',
+    },
+    {
+      icon: Users,
+      title: 'Expert Instructors',
+      description: 'Learn from industry professionals with years of hands-on experience in data analytics.',
+      gradient: 'from-green-500 to-emerald-500',
+    },
   ];
+
   const stats = [
-    { number: content.homepage.stats.studentsEnrolled, label: content.homepage.stats.studentsEnrolledLabel },
-    { number: content.homepage.stats.expertCourses, label: content.homepage.stats.expertCoursesLabel },
-    { number: content.homepage.stats.successRate, label: content.homepage.stats.successRateLabel },
-    { number: content.homepage.stats.supportAvailable, label: content.homepage.stats.supportAvailableLabel },
+    { number: '10,000+', label: 'Students Enrolled' },
+    { number: '50+', label: 'Expert Courses' },
+    { number: '95%', label: 'Success Rate' },
+    { number: '24/7', label: 'Support Available' },
   ];
-  const courses = content.coursesList;
 
   return (
     <div className="min-h-screen">
@@ -39,23 +56,33 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="space-y-8">
               <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200/50 shadow-sm">
                 <Sparkles className="w-4 h-4 text-blue-600" />
-                <span className="text-sm text-gray-700">{content.homepage.hero.badge}</span>
+                <span className="text-sm text-gray-700">Transform Your Career with Data</span>
               </div>
-              <h1 className="text-gray-900">{content.homepage.hero.title}</h1>
-              <p className="text-xl text-gray-600 leading-relaxed">{content.homepage.hero.subtitle}</p>
+              
+              <h1 className="text-gray-900">
+                Master Data Analytics & 
+                <span className="block mt-2 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-gradient">
+                  Transform Your Career
+                </span>
+              </h1>
+              
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Join thousands of professionals learning cutting-edge data analytics skills through our comprehensive short courses and expert-led programs.
+              </p>
+              
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => onNavigate('courses')}
                   className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 flex items-center justify-center space-x-2"
                 >
-                  <span>{content.homepage.hero.exploreCourses}</span>
+                  <span>Explore Courses</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button
                   onClick={() => onNavigate('signup')}
                   className="px-8 py-4 bg-white text-gray-700 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-200"
                 >
-                  {content.homepage.hero.startFreeTrial}
+                  Start Free Trial
                 </button>
               </div>
 
@@ -67,12 +94,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   ))}
                 </div>
                 <div>
-                  <p className="text-gray-900">{content.homepage.hero.joinStudents}</p>
+                  <p className="text-gray-900">Join 10,000+ students</p>
                   <div className="flex items-center space-x-1 text-amber-500">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <span key={i}>★</span>
                     ))}
-                    <span className="text-gray-600 text-sm ml-2">{content.homepage.hero.rating}</span>
+                    <span className="text-gray-600 text-sm ml-2">(4.9/5)</span>
                   </div>
                 </div>
               </div>
@@ -131,11 +158,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 rounded-full mb-4">
               <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm text-blue-600">{content.homepage.features.whyChooseUs}</span>
+              <span className="text-sm text-blue-600">Why Choose Us</span>
             </div>
-            <h2 className="text-gray-900 mb-4">{content.homepage.features.everythingYouNeed}</h2>
+            <h2 className="text-gray-900 mb-4">Everything You Need to Succeed</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {content.homepage.features.everythingYouNeedDesc}
+              We provide comprehensive data analytics education designed for professionals at every level.
             </p>
           </div>
           
@@ -148,9 +175,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="group relative bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-transparent hover:-translate-y-1"
                 >
                   <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity`} />
+                  
                   <div className={`w-14 h-14 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
                     <Icon className="w-7 h-7 text-white" />
                   </div>
+                  
                   <h3 className="text-gray-900 mb-3">{feature.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
                 </div>
@@ -165,14 +194,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <div>
-              <h2 className="text-gray-900 mb-2">{content.homepage.featuredCourses.title}</h2>
-              <p className="text-gray-600">{content.homepage.featuredCourses.subtitle}</p>
+              <h2 className="text-gray-900 mb-2">Featured Courses</h2>
+              <p className="text-gray-600">Start your learning journey today</p>
             </div>
             <button
               onClick={() => onNavigate('courses')}
               className="group px-6 py-3 text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200 flex items-center space-x-2"
             >
-              <span>{content.homepage.featuredCourses.viewAll}</span>
+              <span>View All</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -235,28 +264,41 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </div>
             ))}
           </div>
-            {courses.slice(0, 3).map((course, index) => (
-              <div 
-                key={course.id} 
-                className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 flex flex-col items-start hover:shadow-lg transition-all duration-200 group"
-              >
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-white from-blue-500 to-cyan-500`}>
-                  <BarChart3 className="w-6 h-6" />
-                </div>
-                <h3 className="text-gray-900 mb-4">{course.title}</h3>
-                <p className="text-gray-600 mb-2">{course.description}</p>
-                <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
-                  <span>{course.level}</span>
-                  <span>&bull;</span>
-                  <span>{course.duration}</span>
-                </div>
-                <button
-                  onClick={() => onNavigate('courses')}
-                  className="group/btn text-blue-600 hover:text-blue-700 flex items-center space-x-2"
-                >
-                  <span>{content.homepage.featuredCourses.learnMore}</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            ))}
-                  </button>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-700" />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+        
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
+            <Sparkles className="w-4 h-4 text-white" />
+            <span className="text-sm text-white">Start Your Journey Today</span>
+          </div>
+          
+          <h2 className="text-white mb-6">Ready to Transform Your Career?</h2>
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Join our community of learners and gain the skills you need to succeed in the data-driven world.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => onNavigate('signup')}
+              className="px-8 py-4 bg-white text-blue-600 rounded-xl hover:shadow-2xl hover:shadow-white/20 transition-all duration-300"
+            >
+              Create Free Account
+            </button>
+            <button
+              onClick={() => onNavigate('contact')}
+              className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
+            >
+              Talk to Sales
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

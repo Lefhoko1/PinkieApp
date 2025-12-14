@@ -1,0 +1,284 @@
+{
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "blog": "Blog",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "signup": "Get Started",
+    "logout": "Logout"
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Transform Your Career with Data",
+      "title": "Master Data Analytics & Transform Your Career",
+      "subtitle": "Join thousands of professionals learning cutting-edge data analytics skills through our comprehensive short courses and expert-led programs.",
+      "exploreCourses": "Explore Courses",
+      "startFreeTrial": "Start Free Trial",
+      "joinStudents": "Join 10,000+ students",
+      "rating": "(4.9/5)",
+      "imageAlt": "Data Analytics Dashboard"
+    },
+    "stats": {
+      "studentsEnrolled": "10,000+",
+      "studentsEnrolledLabel": "Students Enrolled",
+      "expertCourses": "50+",
+      "expertCoursesLabel": "Expert Courses",
+      "successRate": "95%",
+      "successRateLabel": "Success Rate",
+      "supportAvailable": "24/7",
+      "supportAvailableLabel": "Support Available"
+    },
+    "features": {
+      "whyChooseUs": "Why Choose Us",
+      "everythingYouNeed": "Everything You Need to Succeed",
+      "everythingYouNeedDesc": "We provide comprehensive data analytics education designed for professionals at every level.",
+      "feature1Title": "Industry-Leading Curriculum",
+      "feature1Desc": "Learn from real-world data analytics scenarios and case studies used by Fortune 500 companies.",
+      "feature2Title": "Self-Paced Learning",
+      "feature2Desc": "Study at your own pace with our comprehensive library of courses, tutorials, and resources.",
+      "feature3Title": "Certification Programs",
+      "feature3Desc": "Earn recognized certificates upon course completion to boost your career prospects.",
+      "feature4Title": "Expert Instructors",
+      "feature4Desc": "Learn from industry professionals with years of hands-on experience in data analytics."
+    },
+    "featuredCourses": {
+      "title": "Featured Courses",
+      "subtitle": "Start your learning journey today",
+      "viewAll": "View All",
+      "learnMore": "Learn More"
+    }
+  },
+  "footer": {
+    "brand": "DataAnalytics Pro",
+    "description": "Empowering professionals with cutting-edge data analytics education and resources.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "courses": "Courses",
+    "blog": "Blog",
+    "contact": "Contact",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "community": "Community",
+    "support": "Support",
+    "faqs": "FAQs",
+    "connectWithUs": "Connect With Us",
+    "email": "info@dataanalyticspro.com",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© 2025 DataAnalytics Pro. All rights reserved."
+  }
+  ,
+  "courses": {
+    "searchPlaceholder": "Search courses...",
+    "categories": {
+      "all": "All Courses",
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "courseCard": {
+      "lessons": "lessons",
+      "students": "students",
+      "premium": "Premium"
+    }
+  },
+  "courseDetail": {
+    "overview": "Overview",
+    "curriculum": "Curriculum",
+    "resources": "Resources",
+    "instructor": "Instructor",
+    "level": "Level",
+    "duration": "Duration",
+    "lessons": "Lessons",
+    "students": "Students",
+    "rating": "Rating",
+    "download": "Download",
+    "playLesson": "Play Lesson",
+    "loginToAccess": "Login to access this lesson"
+  },
+  "blog": {
+    "featured": "Featured Post",
+    "readMore": "Read More",
+    "by": "By",
+    "minRead": "min read"
+  },
+  "contact": {
+    "headerBadge": "We're Here to Help",
+    "headerTitle": "Get in Touch",
+    "headerSubtitle": "Have questions? We're here to help. Reach out to our team anytime.",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you for contacting us! We'll get back to you soon."
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back,",
+    "continueLearning": "Continue your learning journey and achieve your goals.",
+    "coursesEnrolled": "Courses Enrolled",
+    "certificatesEarned": "Certificates Earned",
+    "hoursLearned": "Hours Learned",
+    "avgProgress": "Avg. Progress",
+    "recentActivity": "Recent Activity",
+    "contactSupport": "Contact Support"
+  },
+  "login": {
+    "welcome": "Welcome Back",
+    "subtitle": "Login to access your courses and materials",
+    "email": "Email Address",
+    "password": "Password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "signup": "Sign Up",
+    "errorFillFields": "Please fill in all fields",
+    "errorPasswordLength": "Password must be at least 6 characters"
+  },
+  "signup": {
+    "welcome": "Start Your Journey",
+    "subtitle": "Join thousands of professionals transforming their careers with data analytics.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "signupButton": "Sign Up",
+    "alreadyAccount": "Already have an account?",
+    "login": "Login",
+    "errorFillFields": "Please fill in all fields",
+    "errorPasswordLength": "Password must be at least 6 characters",
+    "errorPasswordsMatch": "Passwords do not match",
+    "benefits": [
+      "Access to 50+ expert courses",
+      "Learn at your own pace",
+      "Earn certificates",
+      "Lifetime access to materials"
+    ]
+  },
+  "coursesList": [
+    {
+      "id": "1",
+      "title": "Python for Data Analytics",
+      "description": "Master Python programming fundamentals and learn how to use pandas, NumPy, and matplotlib for data analysis.",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "lessons": 24,
+      "rating": 4.8,
+      "students": 1245,
+      "isPremium": true
+    },
+    {
+      "id": "2",
+      "title": "Data Visualization with Tableau",
+      "description": "Create stunning and interactive dashboards that tell compelling data stories using Tableau.",
+      "level": "Intermediate",
+      "duration": "4 weeks",
+      "lessons": 18,
+      "rating": 4.9,
+      "students": 892,
+      "isPremium": true
+    },
+    {
+      "id": "3",
+      "title": "Statistical Analysis Fundamentals",
+      "description": "Learn essential statistical concepts and techniques for analyzing and interpreting data effectively.",
+      "level": "Beginner",
+      "duration": "5 weeks",
+      "lessons": 20,
+      "rating": 4.7,
+      "students": 1567,
+      "isPremium": false
+    },
+    {
+      "id": "4",
+      "title": "Business Analytics & Intelligence",
+      "description": "Apply analytics to real business problems and learn to make data-driven decisions.",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "lessons": 32,
+      "rating": 4.9,
+      "students": 2103,
+      "isPremium": true
+    },
+    {
+      "id": "5",
+      "title": "SQL for Data Analysis",
+      "description": "Master SQL queries and database management for extracting insights from relational databases.",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "lessons": 22,
+      "rating": 4.8,
+      "students": 1789,
+      "isPremium": false
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "1",
+      "title": "10 Essential Python Libraries for Data Analysis",
+      "excerpt": "Discover the most powerful Python libraries that every data analyst should know, from pandas to seaborn.",
+      "author": "Sarah Johnson",
+      "date": "December 10, 2025",
+      "readTime": "8 min",
+      "category": "Python"
+    },
+    {
+      "id": "2",
+      "title": "Data Visualization Best Practices for 2025",
+      "excerpt": "Learn how to create compelling visualizations that effectively communicate insights to stakeholders.",
+      "author": "Michael Chen",
+      "date": "December 8, 2025",
+      "readTime": "6 min",
+      "category": "Visualization"
+    },
+    {
+      "id": "3",
+      "title": "Getting Started with Statistical Analysis",
+      "excerpt": "A beginner-friendly guide to understanding statistical concepts and applying them to real-world data.",
+      "author": "Emily Davis",
+      "date": "December 5, 2025",
+      "readTime": "10 min",
+      "category": "Statistics"
+    },
+    {
+      "id": "4",
+      "title": "How to Build Your First Data Analytics Dashboard",
+      "excerpt": "Step-by-step tutorial on creating interactive dashboards that drive business decisions.",
+      "author": "David Martinez",
+      "date": "December 3, 2025",
+      "readTime": "12 min",
+      "category": "Dashboards"
+    },
+    {
+      "id": "5",
+      "title": "Machine Learning vs Traditional Analytics: When to Use Each",
+      "excerpt": "Understanding the differences and knowing when to apply machine learning techniques.",
+      "author": "Lisa Wang",
+      "date": "December 1, 2025",
+      "readTime": "15 min",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "6",
+      "title": "SQL Query Optimization Techniques",
+      "excerpt": "Master advanced SQL techniques to improve query performance and database efficiency.",
+      "author": "James Brown",
+      "date": "November 28, 2025",
+      "readTime": "9 min",
+      "category": "SQL"
+    }
+  ]
+}

@@ -26,11 +26,10 @@ export function Header({ currentPage, onNavigate, isLoggedIn, onLogout }: Header
             className="flex items-center space-x-3 cursor-pointer group"
             onClick={() => onNavigate('home')}
           >
-            <img
-              src="/logo.png"
-              alt="Logo"
-              className="w-12 h-12 object-contain rounded-xl shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all duration-300"
-            />
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 via-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all duration-300">
+              <Sparkles className="w-5 h-5 text-white" />
+            </div>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">DataAnalytics Pro</span>
           </div>
 
           {/* Desktop Navigation */}
